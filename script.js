@@ -1,3 +1,5 @@
+'use strict'
+
 class Student {
     constructor(name, marks) {
       this.name = name
@@ -19,9 +21,9 @@ class Group {
     constructor(){
         this.#students = [];
     }
-    // set students (value){
-    //     console.error('Error!');
-    // }
+    set students (value){
+        console.error('Error! You cant redefine "students"');
+    }
     get students(){
         return this.#students;
     }
